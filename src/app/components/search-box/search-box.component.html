@@ -5,6 +5,8 @@
             name="text" 
             id="text" 
             placeholder='search robots...'
-            (ngChange)="onChange()">
+            [(ngModel)]="value"
+            (change)="onChange()"
+            >
     </div>
 </form>
