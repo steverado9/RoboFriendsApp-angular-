@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { log } from 'console';
-import {FormsModule} from '@angular/forms'
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-search-box',
