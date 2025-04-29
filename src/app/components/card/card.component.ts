@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
-export class CardComponent {
 
+// @Injectable({providedIn: 'root'})
+
+export class CardComponent {
+  // private http = inject(HttpClient);
 }
