@@ -1,14 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { RobotService } from '../../services/robot.service';
+
+
 
 @Component({
   selector: 'app-card',
   imports: [],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.css'
+  styleUrl: './card.component.css',
+  providers: [{ provide: RobotService, useValue: { emoji: '🌻' } }]
 })
 
-// @Injectable({providedIn: 'root'})
-
 export class CardComponent {
-  // private http = inject(HttpClient);
+  url: string = 'https://jsonplaceholder.typicode.com/users';
+  flower = inject(RobotService);
+
 }
