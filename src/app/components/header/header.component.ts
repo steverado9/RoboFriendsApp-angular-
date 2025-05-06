@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { SearchBoxComponent } from '../search-box/search-box.component';
 
 @Component({
   selector: 'app-header',
-  imports: [SearchBoxComponent],
+  imports: [],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
